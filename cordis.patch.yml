@@ -1,0 +1,4 @@
+# dsh-theme-redshift — DSH bundle patch
+- insert:
+    - id: dsh-theme-redshift
+      name: dsh-theme-redshift

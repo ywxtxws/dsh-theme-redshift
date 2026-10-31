@@ -1,0 +1,56 @@
+{
+  "name": "dsh-theme-redshift",
+  "version": "0.3.0",
+  "description": "赤色观测站 — DSH Web 深空赤色主题：114 个 token 全量重映射、程序化生成的引力透镜场景、虚空撕裂光带、观测站 HUD 与观测窗。零外部素材。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "theme",
+    "dark",
+    "red",
+    "observatory"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "locale",
+    "tools",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  },
+  "author": "大肥鱼 <https://github.com/ywxtxws>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ywxtxws/dsh-theme-redshift.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ywxtxws/dsh-theme-redshift/issues"
+  },
+  "homepage": "https://github.com/ywxtxws/dsh-theme-redshift#readme"
+}
